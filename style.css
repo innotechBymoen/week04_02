@@ -1,0 +1,35 @@
+p:nth-child(1) {
+    width: 50vw;
+    margin-left: 25vw;
+    margin-top: 25px;
+}
+
+p:nth-child(2) {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 25px;
+}
+
+p:nth-child(3) {
+    width: 70vw;
+    margin-left: 15vw;
+    margin-top: 25px;
+}
+
+p:nth-child(4) {
+    width: 300px;
+    margin-left: 30%;
+    margin-top: 5vh;
+}
+
+p:nth-child(5) {
+    width: 400px;
+    margin-left: 30%;
+    margin-top: 5vh;
+}
+
+p:nth-child(6) {
+    width: 500px;
+    margin-left: 30%;
+    margin-top: 5vh;
+}
