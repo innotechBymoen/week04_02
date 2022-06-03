@@ -4,30 +4,45 @@ img {
 
 #article_container {
     display: grid;
-    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     column-gap: 20px;
     align-items: end;
     justify-items: center;
+    background-color: bisque;
 }
 
 #first_article {
     align-self: start;
 }
 
-header {
+#page_header {
     display: grid;
-    align-items: center;
-    justify-items: start;
     grid-auto-flow: column;
-
     height: 50px;
     background-color: firebrick;
+
+    align-items: center;
+    justify-items: start;
 }
 
-header img {
-    width: 30px;
-}
-
-header nav {
+#page_header>nav {
     justify-self: end;
+}
+
+#page_header>img {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+}
+
+#article_container>article {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+}
+
+#image_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
