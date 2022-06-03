@@ -1,10 +1,33 @@
 img {
-    max-width: 100%;
+    width: 100%;
 }
 
 #article_container {
     display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    column-gap: 20px;
+    align-items: end;
+    justify-items: center;
+}
+
+#first_article {
+    align-self: start;
+}
+
+header {
+    display: grid;
+    align-items: center;
+    justify-items: start;
     grid-auto-flow: column;
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    height: 50px;
+    background-color: firebrick;
+}
+
+header img {
+    width: 30px;
+}
+
+header nav {
+    justify-self: end;
 }
